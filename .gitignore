@@ -7,6 +7,7 @@
 *.kdev4
 
 #vscode
+.vs
 .vscode
 
 # Compiled Object files
