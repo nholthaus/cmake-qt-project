@@ -11,12 +11,12 @@ set(QT_MINIMUM_VERSION 5.9.0)
 
 # .h files
 list(APPEND HEADER_FILES
-src/example.h
+
 )
 
 # .cpp files
 list(APPEND SOURCE_FILES
-src/example.cpp
+src/main.cpp
 )
 
 # on windows, append headers to source so they show up in visual studio
@@ -91,15 +91,15 @@ find_package(Threads REQUIRED)
 #	RESOURCES
 #-------------------------------------------------------------------------------
 
-list(APPEND QT_RESOURCES
-resources/resources.qrc
-)
-
-qt5_add_resources(RESOURCES ${QT_RESOURCES})
-
-list(APPEND RESOURCES
-resources/resources.rc
-)
+#list(APPEND QT_RESOURCES
+#resources/resources.qrc
+#)
+#
+#qt5_add_resources(RESOURCES ${QT_RESOURCES})
+#
+#list(APPEND RESOURCES
+#resources/resources.rc
+#)
 
 #-------------------------------------------------------------------------------
 #	COMPILE FLAGS
